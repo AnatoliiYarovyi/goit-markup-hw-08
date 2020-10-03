@@ -1,0 +1,70 @@
+.footer {
+  background-color: $ftr-bgcolor;
+
+  &__contacts {
+    margin-right: 70px;
+  }
+  &__social-network {
+    margin-right: 93px;
+  }
+  & .title {
+    margin-bottom: 20px;
+
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.14;
+    color: $white-color;
+  }
+}
+.footer__contacts .address {
+  & .text {
+    margin-bottom: 9px;
+
+    color: $white-color;
+    font-style: normal;
+  }
+
+  & .item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+.address .link {
+  display: block;
+
+  color: $ftr-link-color;
+  font-style: normal;
+
+  transition: {
+    property: color;
+    duration: 250ms;
+    timing-function: $timing-function;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.footer__mailing {
+  & .form {
+    @include centered-flex(flex, center, flex-start);
+  }
+  & .input-mail {
+    width: 358px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    margin-right: 12px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: $ftr-bgcolor;
+
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}

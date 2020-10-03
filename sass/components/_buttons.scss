@@ -1,0 +1,97 @@
+// --------- Hero --------------
+.hero .button {
+  display: inline-block;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 32px;
+  min-width: 200px;
+  border-color: transparent;
+
+  color: $white-color;
+  background-color: $accent-color;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+// --------- Modal ---------------------
+.modal .btn-close__icon {
+  width: 18px;
+  height: 18px;
+
+  transition: fill 250ms $timing-function;
+}
+.modal .btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  @include centered-flex();
+
+  background: $white-color;
+  cursor: pointer;
+
+  &:hover .btn-close__icon,
+  &:focus .btn-close__icon {
+    fill: $accent-color;
+  }
+}
+.form .btn-submit {
+  @include centered-flex(flex, center, flex-start);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 55px;
+
+  border-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $white-color;
+  background-color: $accent-color;
+  cursor: pointer;
+}
+
+// -------- Footer -------------------
+.footer .btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 29px;
+
+  border-color: transparent;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  cursor: pointer;
+}
+.footer .btn__name {
+  @include centered-flex(flex, center, flex-start);
+}
+.footer .btn__name::after {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url('../images/telegram.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+}

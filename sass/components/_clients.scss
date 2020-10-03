@@ -1,0 +1,33 @@
+.clients {
+  display: flex;
+}
+.clients .item {
+  display: flex;
+  width: calc((100% - 30px * 5) / 6);
+  height: 90px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  transition: border-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
+  &:hover .link,
+  &:focus .link {
+    fill: $accent-color;
+  }
+}
+.clients .item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients .link {
+  @include centered-flex();
+  width: 100%;
+  height: 90px;
+  fill: $icon-color;
+
+  transition: fill 250ms $timing-function;
+}

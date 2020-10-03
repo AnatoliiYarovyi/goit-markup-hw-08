@@ -1,0 +1,103 @@
+.modal .form {
+  padding: 40px;
+}
+.modal .title {
+  margin-bottom: 12px;
+
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+}
+.form-field {
+  position: relative;
+
+  @include centered-flex(flex, center, flex-start);
+  flex-direction: column;
+}
+.form-label {
+  width: 100%;
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $text-color;
+}
+.form-input,
+.form-field textarea {
+  width: 100%;
+
+  outline: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  transition: border-color 250ms $timing-function;
+  cursor: pointer;
+}
+.form-input {
+  margin-bottom: 10px;
+  padding: 12px 12px 12px 42px;
+
+  &:focus + .icon {
+    fill: $accent-color;
+  }
+}
+.form-input:focus,
+.form-field textarea:focus {
+  border-color: $accent-color;
+}
+.form-field .icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-25%);
+
+  width: 18px;
+  height: 18px;
+
+  transition: fill 250ms $timing-function;
+}
+.form-field textarea {
+  resize: none;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+}
+.form-checkbox {
+  @include centered-flex();
+
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  color: $text-color;
+  cursor: pointer;
+}
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.form-checkbox .icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid $primary-text-color;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+.checkbox:checked + .icon {
+  border-color: transparent;
+  background-image: url('../images/modal-svg/icon-check.svg');
+  background-color: $accent-color;
+  background-size: contain;
+  background-origin: border-box;
+}
+.form-checkbox .link-contract {
+  color: $accent-color;
+}

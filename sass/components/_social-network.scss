@@ -1,0 +1,44 @@
+// ----------- Staff ---------------
+%placeholder-size {
+  @include centered-flex();
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+}
+.social-network {
+  @include centered-flex();
+}
+
+.social-network .item {
+  @extend %placeholder-size;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+  &:hover .link,
+  &:focus .link {
+    fill: $white-color;
+  }
+}
+.social-network .item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-network .link {
+  @extend %placeholder-size;
+  fill: $icon-color;
+}
+.social-network .icon {
+  height: 20px;
+  width: 20px;
+}
+
+// ----------- Footer ---------------
+.footer__social-network .link {
+  background: rgba(255, 255, 255, 0.1);
+  fill: $white-color;
+}

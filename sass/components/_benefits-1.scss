@@ -1,5 +1,8 @@
 .benefits-list {
-  display: flex;
+  @include for-size(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   & .subtitle {
     margin-top: 0;
@@ -9,11 +12,36 @@
     line-height: 1.14;
     text-transform: uppercase;
   }
-  & .item {
-    width: calc((100% - 30px * 3) / 4);
-  }
   & .item:not(:last-child) {
-    margin-right: 30px;
+    @include for-size(mobile-only) {
+      margin-bottom: 30px;
+    }
+  }
+  & .item {
+    @include for-size(tablet) {
+      width: calc((100% - 30px * 1) / 2);
+    }
+
+    @include for-size(desktop) {
+      width: calc((100% - 30px * 3) / 4);
+    }
+  }
+
+  & .item:not(:nth-child(2n)) {
+    @include for-size(tablet) {
+      margin-right: 30px;
+    }
+  }
+  & .item:nth-child(-n + 2) {
+    @include for-size(tablet-only) {
+      margin-bottom: 30px;
+    }
+  }
+
+  & .item:not(:last-child) {
+    @include for-size(desktop) {
+      margin-right: 30px;
+    }
   }
   & .item::before {
     content: '';

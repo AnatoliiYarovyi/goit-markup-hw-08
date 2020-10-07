@@ -1,8 +1,8 @@
 .hero {
   @include centered-flex();
   flex-direction: column;
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-color: $ftr-bgcolor;
@@ -13,8 +13,18 @@
     ),
     url('../images/hero.jpg');
 
+  background-size: cover;
   color: $white-color;
   text-align: center;
+
+  @include for-size(tablet) {
+    max-width: 768px;
+  }
+
+  @include for-size(desktop) {
+    max-width: 1600px;
+    height: 600px;
+  }
 }
 .hero .hero-title {
   margin-left: auto;
@@ -24,8 +34,15 @@
   max-width: 696px;
 
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @include for-size(desktop) {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }

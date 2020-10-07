@@ -1,0 +1,77 @@
+.site-address {
+  display: flex;
+}
+.site-address {
+  @include for-size(tablet-only) {
+    flex-direction: column;
+  }
+}
+.site-address {
+  margin-left: auto;
+
+  @include for-size(tablet-only) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+.site-address .item:not(:last-child) {
+  @include for-size(tablet-only) {
+    margin-bottom: 10px;
+  }
+
+  @include for-size(desktop) {
+    margin-right: 50px;
+  }
+}
+.site-address .item {
+  padding: 0;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+
+  @include for-size(desktop) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+.site-address .link {
+  display: block;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  color: $primary-text-color;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.site-address .link {
+  @include for-size(desktop) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+.site-address .link {
+  @include centered-flex(inline-flex, center, flex-start);
+
+  color: $text-color;
+}
+.site-address .icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.site-address .icon.leter {
+  height: 12px;
+  width: 16px;
+}
+.site-address .icon.phone {
+  height: 16px;
+  width: 10px;
+}

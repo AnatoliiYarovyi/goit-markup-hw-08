@@ -1,13 +1,35 @@
 .conteiner {
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1230px;
+
+  @include for-size(mobile) {
+    width: 480px;
+  }
+
+  @include for-size(tablet) {
+    width: 768px;
+  }
+
+  @include for-size(desktop) {
+    width: 1200px;
+  }
 }
 .footer .conteiner {
   display: flex;
+  flex-direction: column;
   align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @include for-size(desktop) {
+    flex-direction: row;
+  }
 }
+
+// display: flex;
+// align-items: baseline;
+// padding-top: 60px;
+// padding-bottom: 60px;

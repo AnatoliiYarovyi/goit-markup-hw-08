@@ -6,6 +6,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  outline: 1px solid red;
 }
 
 body {
@@ -35,12 +36,16 @@ img {
 }
 .title {
   margin-top: 0;
-  margin-bottom: 50;
+  margin-bottom: 30px;
 
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+
+  @include for-size(desktop) {
+    margin-bottom: 50px;
+  }
 }
 .text {
   margin-top: 0;

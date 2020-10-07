@@ -69,7 +69,12 @@
 
   margin-bottom: 30px;
 
-  font-size: 14px;
+  font-size: 12px;
+  line-height: 1.17;
+  @include for-size(desktop) {
+    font-size: 14px;
+  }
+
   color: $text-color;
   cursor: pointer;
 }

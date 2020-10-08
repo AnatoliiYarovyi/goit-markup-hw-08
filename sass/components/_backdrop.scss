@@ -13,4 +13,6 @@
 
   opacity: 1;
   transform: opacity 250ms $timing-function;
+
+  overflow: auto;
 }

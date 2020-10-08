@@ -16,12 +16,14 @@
 }
 .site-address .item:not(:last-child) {
   margin-bottom: 16px;
+
   @include for-size(tablet-only) {
     margin-bottom: 10px;
   }
 
   @include for-size(desktop) {
     margin-right: 50px;
+    margin-bottom: 0px;
   }
 }
 .site-address .item {

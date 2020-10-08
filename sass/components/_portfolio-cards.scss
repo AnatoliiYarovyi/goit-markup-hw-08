@@ -60,10 +60,20 @@
   transform: translateY(101%);
   width: 100%;
   height: 100%;
-  padding: 63px 24px;
+  padding: 24px 24px;
   background-color: rgba(33, 150, 243, 0.9);
 
   transition: transform 250ms $timing-function;
+
+  @include for-size(mobile) {
+    padding: 77px 24px;
+  }
+  @include for-size(tablet) {
+    padding: 49px 24px;
+  }
+  @include for-size(desktop) {
+    padding: 63px 24px;
+  }
 }
 .cards .item:hover .desc-overlay,
 .cards .item:focus .desc-overlay {

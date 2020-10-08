@@ -47,6 +47,11 @@ img {
     margin-bottom: 50px;
   }
 }
+.invisible__title {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
 .text {
   margin-top: 0;
   margin-bottom: 0;

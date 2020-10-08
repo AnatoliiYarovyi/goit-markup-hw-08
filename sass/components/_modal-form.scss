@@ -1,5 +1,8 @@
 .modal .form {
-  padding: 40px;
+  padding: 40px 10px 10px 10px;
+  @include for-size(mobile) {
+    padding: 40px;
+  }
 }
 .modal .title {
   margin-bottom: 12px;
@@ -69,8 +72,12 @@
 
   margin-bottom: 30px;
 
-  font-size: 12px;
+  font-size: 9px;
   line-height: 1.17;
+
+  @include for-size(mobile) {
+    font-size: 12px;
+  }
   @include for-size(desktop) {
     font-size: 14px;
   }

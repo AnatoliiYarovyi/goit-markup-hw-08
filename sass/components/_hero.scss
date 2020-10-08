@@ -17,6 +17,11 @@
   color: $white-color;
   text-align: center;
 
+  // для фикс хедера
+  @include for-size(mobile-only) {
+    margin-top: 60px;
+  }
+
   @include for-size(tablet) {
     max-width: 768px;
   }

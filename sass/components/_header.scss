@@ -2,7 +2,16 @@ header {
   border-bottom: 1px solid #ececec;
 }
 .conteiner.main-nav {
-  position: relative;
+  @include for-size(mobile-only) {
+    // position: relative;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+
+    background-color: $white-color;
+  }
 }
 .conteiner.main-nav,
 .main-nav {

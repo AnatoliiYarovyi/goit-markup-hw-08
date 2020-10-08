@@ -28,7 +28,6 @@
   }
 
   @include for-size(tablet) {
-    // max-width: 768px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -49,7 +48,6 @@
   }
 
   @include for-size(desktop) {
-    // max-width: 1600px;
     height: 600px;
     background-image: linear-gradient(
         to right,

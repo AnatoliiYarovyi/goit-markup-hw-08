@@ -50,9 +50,6 @@
     color: $accent-color;
   }
 }
-// .site-nav .link {
-//   // position: relative;
-// }
 .site-nav .link.current::after {
   content: '';
   position: absolute;

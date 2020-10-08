@@ -9,6 +9,7 @@
     left: 0;
 
     overflow: auto;
+    // для того что-бы работал "overflow" при перевернутом экране использывыл "vh"
     height: 65vh;
     // height: 393px;
     background-color: $white-color;

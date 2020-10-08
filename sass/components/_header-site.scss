@@ -1,19 +1,17 @@
 .site-address {
   display: flex;
-}
-.site-address {
-  @include for-size(tablet-only) {
-    flex-direction: column;
-  }
-}
-.site-address {
   margin-left: auto;
+  @include for-size(mobile-only) {
+    margin-bottom: 60px;
+  }
 
   @include for-size(tablet-only) {
+    flex-direction: column;
     padding-top: 21px;
     padding-bottom: 21px;
   }
 }
+
 .site-address .item:not(:last-child) {
   margin-bottom: 16px;
 

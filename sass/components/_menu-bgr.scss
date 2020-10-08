@@ -7,7 +7,10 @@
     position: absolute;
     top: 101%;
     left: 0;
-    height: 393px;
+
+    overflow: auto;
+    height: 65vh;
+    // height: 393px;
     background-color: $white-color;
   }
   &.is-open {

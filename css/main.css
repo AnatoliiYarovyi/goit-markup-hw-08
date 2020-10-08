@@ -351,7 +351,6 @@ header {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     z-index: 3;
-    overflow: auto;
     background-color: #ffffff;
   }
 }
@@ -464,6 +463,13 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: auto;
+}
+
+@media (max-width: 767px) {
+  .site-address {
+    margin-bottom: 60px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -472,15 +478,6 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-}
-
-.site-address {
-  margin-left: auto;
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-  .site-address {
     padding-top: 21px;
     padding-bottom: 21px;
   }
@@ -587,7 +584,8 @@ header {
     position: absolute;
     top: 101%;
     left: 0;
-    height: 393px;
+    overflow: auto;
+    height: 65vh;
     background-color: #ffffff;
   }
 }

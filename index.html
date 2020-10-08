@@ -615,57 +615,59 @@
     <!-- Модальное окно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="btn-close" data-modal-close>
-          <svg class="btn-close__icon">
-            <use href="./images/sprite.svg#icon-close-black"></use>
-          </svg>
-        </button>
-        <form class="form">
-          <h2 class="title">Оставьте свои данные, мы вам перезвоним</h2>
-          <label class="form-field">
-            <span class="form-label">Имя</span>
-            <input type="text" name="name" class="form-input" />
-            <svg class="icon">
-              <use href="./images/sprite.svg#icon-person-black"></use>
+        <div class="modal-guts">
+          <button class="btn-close" data-modal-close>
+            <svg class="btn-close__icon">
+              <use href="./images/sprite.svg#icon-close-black"></use>
             </svg>
-          </label>
+          </button>
+          <form class="form">
+            <h2 class="title">Оставьте свои данные, мы вам перезвоним</h2>
+            <label class="form-field">
+              <span class="form-label">Имя</span>
+              <input type="text" name="name" class="form-input" />
+              <svg class="icon">
+                <use href="./images/sprite.svg#icon-person-black"></use>
+              </svg>
+            </label>
 
-          <label class="form-field">
-            <span class="form-label">Телефон</span>
-            <input type="tel" name="tel" class="form-input" />
-            <svg class="icon">
-              <use href="./images/sprite.svg#icon-phone-black"></use>
-            </svg>
-          </label>
+            <label class="form-field">
+              <span class="form-label">Телефон</span>
+              <input type="tel" name="tel" class="form-input" />
+              <svg class="icon">
+                <use href="./images/sprite.svg#icon-phone-black"></use>
+              </svg>
+            </label>
 
-          <label class="form-field">
-            <span class="form-label">Почта</span>
-            <input type="email" name="mail" class="form-input" />
-            <svg class="icon">
-              <use href="./images/sprite.svg#icon-email-black"></use>
-            </svg>
-          </label>
+            <label class="form-field">
+              <span class="form-label">Почта</span>
+              <input type="email" name="mail" class="form-input" />
+              <svg class="icon">
+                <use href="./images/sprite.svg#icon-email-black"></use>
+              </svg>
+            </label>
 
-          <div class="form-field">
-            <label class="form-label">Комментарий</label>
-            <textarea
-              name="comment"
-              rows="5"
-              placeholder="Введите текст"
-            ></textarea>
-          </div>
+            <div class="form-field">
+              <label class="form-label">Комментарий</label>
+              <textarea
+                name="comment"
+                rows="5"
+                placeholder="Введите текст"
+              ></textarea>
+            </div>
 
-          <label class="form-checkbox">
-            <input class="checkbox" type="checkbox" name="checkbox" />
-            <span class="icon"></span>Соглашаюсь с рассылкой и принимаю<a
-              href=""
-              class="link-contract"
-            >
-              Условия договора</a
-            >
-          </label>
-          <button type="submit" class="btn-submit">Отправить</button>
-        </form>
+            <label class="form-checkbox">
+              <input class="checkbox" type="checkbox" name="checkbox" />
+              <span class="icon"></span>Соглашаюсь с рассылкой и принимаю<a
+                href=""
+                class="link-contract"
+              >
+                Условия договора</a
+              >
+            </label>
+            <button type="submit" class="btn-submit">Отправить</button>
+          </form>
+        </div>
       </div>
     </div>
     <script src="./js/bgr-menu.js"></script>

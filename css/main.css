@@ -351,6 +351,7 @@ header {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     z-index: 3;
+    overflow: auto;
     background-color: #ffffff;
   }
 }

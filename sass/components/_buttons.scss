@@ -1,3 +1,29 @@
+// --------- bgr --------
+.main-nav .menu-button {
+  @include for-size(mobile-only) {
+    display: block;
+    margin-left: auto;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: $white-color;
+
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
+  }
+}
+.menu-button .icon-close {
+  display: none;
+}
+.menu-button.is-open .icon-close {
+  display: block;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}
 // --------- Hero --------------
 .hero .button {
   display: inline-block;

@@ -181,6 +181,33 @@ img {
   }
 }
 
+@media (max-width: 767px) {
+  .main-nav .menu-button {
+    display: block;
+    margin-left: auto;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #ffffff;
+  }
+  .main-nav .menu-button:hover, .main-nav .menu-button:focus {
+    fill: #2196f3;
+  }
+}
+
+.menu-button .icon-close {
+  display: none;
+}
+
+.menu-button.is-open .icon-close {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
 .hero .button {
   display: inline-block;
   border-radius: 4px;
@@ -306,6 +333,10 @@ header {
   border-bottom: 1px solid #ececec;
 }
 
+.conteiner.main-nav {
+  position: relative;
+}
+
 .conteiner.main-nav,
 .main-nav {
   display: -webkit-box;
@@ -326,6 +357,15 @@ header {
 @media (max-width: 767px) {
   .navigation-wrap {
     display: none;
+    position: absolute;
+    content: ' ';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 393px;
+  }
+  .navigation-wrap .is-open {
+    display: block;
   }
 }
 

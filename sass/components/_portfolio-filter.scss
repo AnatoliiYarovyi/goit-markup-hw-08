@@ -1,9 +1,3 @@
-.section.conteiner-bgr {
-  // для фикс хедера
-  @include for-size(mobile-only) {
-    margin-top: 60px;
-  }
-}
 button {
   font-family: inherit;
 }

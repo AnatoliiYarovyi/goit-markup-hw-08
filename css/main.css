@@ -338,6 +338,12 @@ header {
 }
 
 @media (max-width: 767px) {
+  header {
+    margin-top: 62px;
+  }
+}
+
+@media (max-width: 767px) {
   .conteiner.main-nav {
     position: fixed;
     top: 0;
@@ -578,7 +584,7 @@ header {
   .navigation-wrap {
     display: none;
     position: absolute;
-    top: 99%;
+    top: 101%;
     left: 0;
     height: 393px;
     background-color: #ffffff;
@@ -661,12 +667,6 @@ header {
   background-size: cover;
   color: #ffffff;
   text-align: center;
-}
-
-@media (max-width: 767px) {
-  .hero {
-    margin-top: 60px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -1265,12 +1265,6 @@ header {
   .footer__mailing .input-mail {
     width: 358px;
     margin-right: 12px;
-  }
-}
-
-@media (max-width: 767px) {
-  .section.conteiner-bgr {
-    margin-top: 60px;
   }
 }
 

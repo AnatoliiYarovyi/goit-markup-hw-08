@@ -1,4 +1,7 @@
 header {
+  @include for-size(mobile-only) {
+    margin-top: 62px;
+  }
   border-bottom: 1px solid #ececec;
 }
 .conteiner.main-nav {

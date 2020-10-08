@@ -21,10 +21,29 @@
         <a href="./" class="logo link">
           <span class="current">Web</span>Studio
         </a>
-        <div class="navigation-wrap">
+        <button type="button" class="menu-button" data-menu-button>
+          <svg
+            width="40px"
+            height="40px"
+            aria-label="переключатель мобильного меню"
+          >
+            <use
+              class="icon-menu"
+              href="./images/sprite.svg#icon-menu-bgr"
+            ></use>
+
+            <use
+              class="icon-close"
+              href="./images/sprite.svg#icon-close-bgr"
+            ></use>
+          </svg>
+        </button>
+        <div class="navigation-wrap" data-menu>
           <nav class="main-nav">
             <ul class="site-nav list">
-              <li class="item"><a href="" class="link">Студия</a></li>
+              <li class="item">
+                <a href="./index.html" class="link">Студия</a>
+              </li>
               <li class="item">
                 <a href="./portfolio.html" class="link current">Портфолио</a>
               </li>
@@ -345,5 +364,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/bgr-menu.js"></script>
   </body>
 </html>

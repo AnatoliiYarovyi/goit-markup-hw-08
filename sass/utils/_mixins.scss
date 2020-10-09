@@ -5,11 +5,16 @@
 }
 
 @mixin for-size($range) {
+  $mobile-m: 375px;
   $mobile: 480px;
   $tablet: 768px;
   $desktop: 1200px;
 
-  @if $range == mobile-rubber {
+  @if $range == mobile-m-only {
+    @media (max-width: #{$mobile-m}) {
+      @content;
+    }
+  } @else if $range == mobile-rubber {
     @media (max-width: #{$mobile}) {
       @content;
     }

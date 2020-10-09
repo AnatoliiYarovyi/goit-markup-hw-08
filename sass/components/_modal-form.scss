@@ -69,16 +69,14 @@
 }
 .form-checkbox {
   @include centered-flex();
+  flex-wrap: wrap;
   margin-bottom: 30px;
 
-  font-size: 9px;
+  font-size: 12px;
   line-height: 1.17;
   color: $text-color;
   cursor: pointer;
 
-  @include for-size(mobile) {
-    font-size: 12px;
-  }
   @include for-size(desktop) {
     font-size: 14px;
   }
